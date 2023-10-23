@@ -1,0 +1,248 @@
+/* Light theme styles */
+.light-theme .user,
+.light-theme .user-text,
+.light-theme .odl-logo,
+.light-theme .user-title,
+.light-theme .user-title span,
+.light-theme .testimonials,
+.light-theme .testimonials-title,
+.light-theme .odl-image {
+  background-color: #fff8e6;
+}
+
+.dark-theme .user-stories,
+.dark-theme .odl-logo,
+.dark-theme .user-text,
+.dark-theme .user-title,
+.dark-theme .user-title span,
+.dark-theme .testimonials,
+.dark-theme .testimonials-title,
+.dark-theme .blue-box,
+.dark-theme .odl-image {
+  background: #79858d;
+  color: #f5f5ff;
+}
+
+.dark-theme .user-title,
+.dark-theme .user-title span {
+  color: #212121;
+}
+.dark-theme .testimonial-company {
+  color: #fdc221;
+  font-weight: 600;
+}
+
+.odl-logo {
+  width: 1650px;
+}
+
+.user-stories {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+}
+
+.blue-box {
+  background-color: #f5f9ff;
+  border-radius: 150px 0px 0px 0px;
+  width: 1400px;
+  height: 600px;
+}
+
+.success-box {
+  border-radius: 100px 0px 0px 0px;
+  background: #fff5db;
+  backdrop-filter: blur(2px);
+  width: 416px;
+  height: 358px;
+  flex-shrink: 0;
+  top: 1250px;
+  left: 150px;
+}
+
+.dark-theme .success-box {
+  background-color: #676e76;
+}
+.light-theme .success-text {
+  background: #fff5db;
+}
+
+.dark-theme .success-text {
+  background: #676e76;
+  color: #fdc221;
+}
+
+.dark-theme .read-more {
+  color: #fdc221;
+}
+
+.light-theme .read-more {
+  color: #2539ed;
+}
+
+.asd-card {
+  top: 900px;
+  left: 40%;
+}
+
+.nro-card {
+  top: 1400px;
+  left: 40%;
+}
+
+.nfv-card {
+  top: 850px;
+  left: 65%;
+}
+
+.visibility-card {
+  top: 1300px;
+  left: 65%;
+}
+
+.card-image {
+  width: 100px;
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1536px) {
+  .odl-logo {
+    width: 1200px;
+  }
+
+  .user-stories {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 93%);
+  }
+
+  .blue-box {
+    background-color: #f5f9ff;
+    border-radius: 150px 0px 0px 0px;
+    width: 1000px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .success-box {
+    border-radius: 100px 0px 0px 0px;
+    background: #fff5db;
+    backdrop-filter: blur(2px);
+    width: 416px;
+    height: 320px;
+    flex-shrink: 0;
+    position: relative;
+    top: -400px; /* Adjust this value as needed */
+  }
+
+  .asd-card {
+    top: 700px;
+    left: 45%;
+  }
+
+  .nro-card {
+    top: 1140px;
+    left: 45%;
+  }
+
+  .nfv-card {
+    top: 650px;
+    left: 72%;
+  }
+
+  .visibility-card {
+    top: 1080px;
+    left: 72%;
+  }
+
+  .card-image {
+    width: 100px;
+  }
+}
+
+/*tablet*/
+@media screen and (max-width: 1024px) {
+  .success {
+    height: 750px;
+  }
+  .odl-logo {
+    width: 1300px;
+  }
+
+  .user-stories {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 90%);
+  }
+
+  .success-box {
+    border-radius: 100px 0px 0px 0px;
+    background: #fff5db;
+    backdrop-filter: blur(2px);
+    width: 316px;
+    height: 300px;
+    flex-shrink: 0;
+    position: relative;
+    top: -400px;
+    left: 100px;
+  }
+
+  .blue-box {
+    background-color: #f5f9ff;
+    border-radius: 150px 0px 0px 0px;
+    width: 700px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .asd-card {
+    top: 590px;
+    left: 45%;
+  }
+
+  .nro-card {
+    top: 960px;
+    left: 45%;
+  }
+
+  .nfv-card {
+    top: 550px;
+    left: 72%;
+  }
+
+  .visibility-card {
+    top: 910px;
+    left: 72%;
+  }
+
+  .card-image {
+    width: 70px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .odl-logo {
+    width: 1200px;
+    margin-bottom: 15px;
+  }
+
+  .user-stories {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 94%);
+  }
+}
+
+/*Mobile View*/
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .odl-image {
+    display: none;
+  }
+  .user-stories {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 90%);
+  }
+
+  .testimonials-boxes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .quote-image {
+    width: 30px;
+  }
+}

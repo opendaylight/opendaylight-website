@@ -1,0 +1,99 @@
+.nro-boxes {
+  background-color: white !important;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 45px;
+  display: flex;
+  align-items: center;
+}
+
+.nro-boxes .column {
+  background-color: white;
+  color: white;
+}
+
+.nro-boxes p {
+  color: black;
+  background-color: #fff;
+}
+
+.nro-boxes h3 {
+  color: black;
+  background-color: #fff;
+}
+
+.usecase-image {
+  width: 570px;
+  height: 330px;
+}
+
+.ericsson-image {
+  width: 550px;
+}
+
+/*laptop*/
+@media screen and (min-width: 1280px) and (max-width: 1536px) {
+  .usecase-image {
+    width: 480px;
+    height: 380px;
+  }
+  .ericsson-image {
+    width: 450px;
+  }
+}
+
+/*tablet*/
+@media screen and (max-width: 1024px) {
+  .nro-boxes {
+    padding: 20px;
+  }
+  .usecase-image {
+    width: 500px;
+    margin-left: 20px;
+  }
+
+  .ericsson-image {
+    width: 350px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nro-boxes {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .usecase-image {
+    display: none;
+  }
+
+  .ericsson-image {
+    display: none;
+  }
+}
+
+/*mobile*/
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .nro-boxes {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .usecase-image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .ericsson-image {
+    width: 300px;
+  }
+}
