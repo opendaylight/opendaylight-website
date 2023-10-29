@@ -60,12 +60,12 @@
 }
 
 .map {
-  width: 2100px;
+  width: 700px;
 }
 
 .stats {
-  top: 680px;
-  left: 190px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1;
   justify-content: space-between;
 }
@@ -112,10 +112,28 @@
   width: 180px;
 }
 
+/*
+Bigger Screen: Desktops*/
+@media screen and (min-width: 1537px) {
+  .stats {
+    top: 76%;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .stats {
+    top: 87%;
+  }
+}
+@media screen and (min-width: 3000px) {
+  .stats {
+    top: 60%;
+  }
+}
+
 /* Laptop view */
 @media screen and (min-width: 1280px) and (max-width: 1536px) {
   .map {
-    width: 1600px;
+    width: 570px;
   }
 
   .stats {
@@ -160,7 +178,7 @@
   }
 
   .map {
-    width: 1300px;
+    width: 375px;
   }
 
   .stats-box {
@@ -173,7 +191,7 @@
     margin-left: 10px;
   }
   .stats {
-    top: 480px;
+    top: 88%;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
@@ -199,16 +217,16 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 840px) {
   .stats-text {
     font-size: 14px;
   }
 
   .stats {
-    top: 460px;
+    top: 83%;
   }
   .map {
-    width: 1300px;
+    width: 380px;
   }
 }
 
