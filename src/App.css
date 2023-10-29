@@ -157,11 +157,17 @@ h4 {
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .banner-text {
     padding-left: 50px;
+    font-size: 25px;
+  }
+
+  .banner-image {
+    width: 250px;
+    height: 180px;
   }
 }
 
 /*mobile*/
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 840px) {
   .content-image {
     display: none;
   }
@@ -178,7 +184,7 @@ h4 {
   }
 
   .banner-image {
-    width: 180px;
+    width: 170px;
     height: 150px;
   }
   .footer-text {

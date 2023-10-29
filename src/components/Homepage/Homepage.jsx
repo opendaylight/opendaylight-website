@@ -78,11 +78,11 @@ const Homepage = ({ theme }) => {
         </div>
         {/* why opendaylight/functionality section */}
         <div className="function text-justify xl:my-4 xxl:my-12">
-          <h2 className="function-text ">
+          <h3 className="function-text ">
             <center className="sm:my-10 md:mt-24 xl:my-28 sm:text-3xl xl:text-4xl">
               Why Opendaylight?
             </center>
-          </h2>
+          </h3>
           <div className="grid sm:grid-rows-1 md:grid-rows-2 sm:py-10 xl:py-0 lg:px-10">
             <div className="functionality-row grid sm:grid-cols-1 md:grid-cols-3 sm:gap-16 md:gap-8 xl:gap-14 xxl:gap-16 mb-16 md:px-10 lg:px-0">
               <div className="flexibility">

@@ -86,7 +86,7 @@
 }
 
 /*tablet*/
-@media screen and (min-width: 76px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .shape_1 {
     width: 280px;
   }
@@ -101,7 +101,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 840px) {
   .column-1,
   .column-2,
   .column-3,

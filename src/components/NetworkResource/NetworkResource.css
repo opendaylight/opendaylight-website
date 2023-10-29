@@ -59,7 +59,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 840px) {
   .nro-boxes {
     padding: 20px;
     display: flex;
