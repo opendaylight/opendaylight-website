@@ -12,7 +12,15 @@ npm i
 
  <br>
  
- <p>2. Make sure to run the build command before deploying the changes. You can use the below command.</p>
+ <p>2. To work locally and test the website, start the project with this command.</p>
+
+```
+npm start
+```
+
+ <br>
+ 
+ <p>3. Make sure to run the build command before deploying the changes. You can use the below command.</p>
 
 ```
 npm run build
@@ -20,7 +28,7 @@ npm run build
 
  <br>
 
-<p>3. We are using <a href="https://www.pluralsight.com/guides/deploying-github-pages-with-create-react-app">gh-pages</a> for deployment so make sure to run this command to deploy these changes.</p>
+<p>4. We are using <a href="https://www.pluralsight.com/guides/deploying-github-pages-with-create-react-app">gh-pages</a> for deployment so make sure to run this command to deploy these changes.</p>
 
 ```
 npm run deploy
