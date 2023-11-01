@@ -19,6 +19,10 @@
   color: white;
 }
 
+.light-theme .email-text {
+  color: #212121;
+}
+
 /* Dark theme styles */
 .dark-theme .home,
 .dark-theme .map,
@@ -38,6 +42,11 @@
   background-color: #79858d;
 }
 
+.dark-theme .email-text {
+  color: #c3c3c3;
+}
+
+/* buttons */
 .learn-button {
   background: var(
     --Yellow-Orange-Gradient,
@@ -51,23 +60,23 @@
   font-weight: 600;
 }
 
-.dark-theme .email-text {
-  color: #c3c3c3;
-}
-
-.light-theme .email-text {
-  color: #212121;
-}
-
 .map {
-  width: 700px;
+  width: 650px;
 }
 
+/*Stats box*/
 .stats {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
   justify-content: space-between;
+  bottom: -12%;
+}
+
+.home-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .stats-box,
@@ -78,7 +87,7 @@
 }
 
 .stats-box {
-  padding: 0px 90px;
+  padding: 0px 20px;
   border-left: 0;
 }
 
@@ -88,6 +97,7 @@
   background-color: #79858d;
 }
 
+/* Function Section */
 .function {
   padding: 0;
 }
@@ -108,26 +118,9 @@
   padding-left: 10px;
 }
 
+/* Banner */
 .community-image {
   width: 180px;
-}
-
-/*
-Bigger Screen: Desktops*/
-@media screen and (min-width: 1537px) {
-  .stats {
-    top: 76%;
-  }
-}
-@media screen and (min-width: 2000px) {
-  .stats {
-    top: 87%;
-  }
-}
-@media screen and (min-width: 3000px) {
-  .stats {
-    top: 60%;
-  }
 }
 
 /* Laptop view */
@@ -137,7 +130,6 @@ Bigger Screen: Desktops*/
   }
 
   .stats {
-    top: 610px;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
@@ -168,6 +160,15 @@ Bigger Screen: Desktops*/
 }
 
 /* Tablet view */
+@media screen and (max-width: 1279px) {
+  .map {
+    width: 445px;
+  }
+
+  .learn-button {
+    font-size: 15px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .functionality-row h3 {
     font-size: 20px;
@@ -186,12 +187,10 @@ Bigger Screen: Desktops*/
   }
 
   .stats-text {
-    font-size: 18px;
     padding-top: 10px;
     margin-left: 10px;
   }
   .stats {
-    top: 88%;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
@@ -218,13 +217,6 @@ Bigger Screen: Desktops*/
 }
 
 @media screen and (max-width: 840px) {
-  .stats-text {
-    font-size: 14px;
-  }
-
-  .stats {
-    top: 83%;
-  }
   .map {
     width: 380px;
   }

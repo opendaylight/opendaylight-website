@@ -65,6 +65,7 @@
   height: 250px;
 }
 
+/*Desktop view*/
 @media screen and (min-width: 1280px) and (max-width: 1536px) {
   .about-icon {
     width: 380px;
@@ -81,13 +82,35 @@
     height: 200px;
   }
 }
+
+@media screen and (min-width: 1025px) and (max-width: 1279px) {
+  .about-image,
+  .sdn-image,
+  .training-image {
+    display: flex;
+    align-items: center;
+  }
+
+  .about-icon {
+    width: 350px;
+    height: 450px;
+  }
+  .sdn-icon {
+    width: 400px;
+    height: 400px;
+  }
+
+  .training-icon {
+    width: 400px;
+    height: 200px;
+  }
+}
 /*Tablet view*/
 @media screen and (max-width: 1024px) {
   .about-image,
   .sdn-image,
   .training-image {
     display: flex;
-    flex-direction: row;
     align-items: center;
   }
 
@@ -107,7 +130,7 @@
   }
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .about-image,
   .sdn-image,
   .training-image {

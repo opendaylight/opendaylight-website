@@ -34,7 +34,7 @@ const AutomatedService = ({ theme }) => {
                 />
               )}
             </div>
-            <div className="column sm:pl-0 lg:pl-12 ">
+            <div className="column sm:pl-0 md:pl-12 ">
               <h2 className="sm:text-3xl lg:text-4xl pb-3">Overview</h2>
               <div className="overview-text text-justify sm:text-sm xl:text-base">
                 <p className="pb-3">
@@ -72,7 +72,7 @@ const AutomatedService = ({ theme }) => {
                 <img src={maze_light} alt="Maze Logo" style={{ width: 300 }} />
               )}
             </div>
-            <div className="column sm:pl-0 lg:pl-12">
+            <div className="column sm:pl-0 md:pl-12">
               <h2 className="sm:text-3xl lg:text-4xl pb-3">Challenges</h2>
               <div className="text-justify sm:text-sm xl:text-base">
                 <p className="pb-1">
@@ -96,7 +96,7 @@ const AutomatedService = ({ theme }) => {
                 <img src={odl_light} alt="odl Logo" style={{ width: 150 }} />
               )}
             </div>
-            <div className="column sm:pl-0 lg:pl-12">
+            <div className="column sm:pl-0 md:pl-12">
               <h2 className="sm:text-3xl lg:text-4xl pb-3">
                 Why Opendaylight?
               </h2>
@@ -156,7 +156,7 @@ const AutomatedService = ({ theme }) => {
                 />
               )}
             </div>
-            <div className="column sm:pl-0 lg:pl-12">
+            <div className="column sm:pl-0 md:pl-12">
               <h2 className="sm:text-3xl lg:text-4xl pb-3">Examples</h2>
               <div className="text-justify sm:text-sm xl:text-base">
                 <p className="pb-1">

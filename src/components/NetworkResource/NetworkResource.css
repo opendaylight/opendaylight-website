@@ -44,7 +44,7 @@
 }
 
 /*tablet*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1279px) {
   .nro-boxes {
     padding: 20px;
   }
@@ -59,19 +59,19 @@
   }
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1023px) {
   .nro-boxes {
     padding: 20px;
     display: flex;
     flex-direction: column;
   }
-  .usecase-image {
+  /* .usecase-image {
     display: none;
   }
 
   .ericsson-image {
     display: none;
-  }
+  } */
 }
 
 /*mobile*/

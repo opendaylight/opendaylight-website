@@ -91,7 +91,7 @@ const About = ({ theme }) => {
           </div>
         </div>
         <div className="sdn sm:py-6 xl:py-16 grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 xxl:grid-cols-2">
-          <div className="sdn-image sm:mb-12 xl:my-0">
+          <div className="sdn-image sm:mb-12 md:mb-0 xl:my-0">
             {theme === 'dark-theme' ? (
               <img className="sdn-icon" src={sdn_dark} alt="ODL Dark Logo" />
             ) : (
