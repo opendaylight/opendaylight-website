@@ -63,9 +63,9 @@
 }
 
 /* Tablet view */
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1024px) {
   .footer-text {
-    width: 300px;
+    width: 350px;
     text-align: justify;
     letter-spacing: -0.7px;
   }

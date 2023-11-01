@@ -33,7 +33,7 @@
 }
 
 .odl-logo {
-  width: 1650px;
+  width: 450px;
 }
 
 .user-stories {
@@ -43,19 +43,21 @@
 .blue-box {
   background-color: #f5f9ff;
   border-radius: 150px 0px 0px 0px;
-  width: 1400px;
+  width: 75%; /*both boxes are sticking because of this.*/
   height: 600px;
+  position: relative; /*both boxes are sticking because of this.*/
 }
 
 .success-box {
   border-radius: 100px 0px 0px 0px;
   background: #fff5db;
   backdrop-filter: blur(2px);
-  width: 416px;
+  width: 22%;
   height: 358px;
   flex-shrink: 0;
-  top: 1250px;
-  left: 150px;
+  left: 150px; /*both boxes are sticking because of this.*/
+  transform: translateY(50%);
+  right: 100%; /*both boxes are sticking because of this.*/
 }
 
 .dark-theme .success-box {
@@ -79,32 +81,74 @@
 }
 
 .asd-card {
-  top: 900px;
   left: 40%;
+  top: -10px;
 }
 
 .nro-card {
-  top: 1400px;
   left: 40%;
+  bottom: -5px;
 }
 
 .nfv-card {
-  top: 850px;
   left: 65%;
+  top: -70px;
 }
 
 .visibility-card {
-  top: 1300px;
   left: 65%;
+  bottom: 80px;
 }
 
 .card-image {
   width: 100px;
 }
 
+@media screen and (min-width: 2000px) {
+  .blue-box {
+    width: 75%;
+    height: 800px;
+    position: relative;
+  }
+
+  .success-box {
+    left: 500px;
+    width: 25%;
+    height: 450px;
+    align-items: center;
+    display: flex;
+  }
+  .success-text {
+    font-size: 65px !important;
+  }
+
+  .asd-card,
+  .nro-card,
+  .nfv-card,
+  .visibility-card {
+    padding: 4rem 1rem;
+  }
+
+  .asd-card {
+    left: 45%;
+  }
+
+  .nro-card {
+    left: 45%;
+  }
+
+  .nfv-card {
+    left: 70%;
+  }
+
+  .visibility-card {
+    left: 70%;
+  }
+}
+
 @media screen and (min-width: 1280px) and (max-width: 1536px) {
   .odl-logo {
-    width: 1200px;
+    width: 400px;
   }
 
   .user-stories {
@@ -114,46 +158,85 @@
   .blue-box {
     background-color: #f5f9ff;
     border-radius: 150px 0px 0px 0px;
-    width: 1000px;
-    height: 550px;
+    width: 75%;
+    height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
 
   .success-box {
     border-radius: 100px 0px 0px 0px;
     background: #fff5db;
     backdrop-filter: blur(2px);
-    width: 416px;
-    height: 320px;
+    width: 22%;
+    height: 200px;
     flex-shrink: 0;
-    position: relative;
-    top: -400px; /* Adjust this value as needed */
+    align-items: center;
+    display: flex;
+    right: 100%;
+    top: 20px;
   }
 
   .asd-card {
-    top: 700px;
-    left: 45%;
+    left: 40%;
+    top: -130px;
   }
 
   .nro-card {
-    top: 1140px;
-    left: 45%;
+    left: 40%;
+    bottom: -80px;
   }
 
   .nfv-card {
-    top: 650px;
-    left: 72%;
+    left: 70%;
+    top: -180px;
   }
 
   .visibility-card {
-    top: 1080px;
-    left: 72%;
+    left: 70%;
+    bottom: -30px;
   }
 
   .card-image {
-    width: 100px;
+    width: 80px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1279px) {
+  .odl-logo {
+    width: 400px;
+    height: 400px;
+  }
+  .success-box {
+    height: 240px;
+    display: flex;
+    align-items: center;
+    top: 60px;
+  }
+
+  .asd-card {
+    left: 40%;
+    top: -10%;
+  }
+
+  .nro-card {
+    left: 40%;
+    bottom: -5%;
+  }
+
+  .nfv-card {
+    left: 70%;
+    top: -18%;
+  }
+
+  .visibility-card {
+    left: 70%;
+    bottom: 2%;
+  }
+  .card-image {
+    width: 80px;
   }
 }
 
@@ -178,7 +261,6 @@
     height: 300px;
     flex-shrink: 0;
     position: relative;
-    top: -400px;
     left: 100px;
   }
 
@@ -193,22 +275,18 @@
   }
 
   .asd-card {
-    top: 590px;
     left: 45%;
   }
 
   .nro-card {
-    top: 960px;
     left: 45%;
   }
 
   .nfv-card {
-    top: 550px;
     left: 72%;
   }
 
   .visibility-card {
-    top: 910px;
     left: 72%;
   }
 
@@ -217,7 +295,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 840px) {
   .odl-logo {
     width: 1200px;
     margin-bottom: 15px;

@@ -42,89 +42,91 @@ const UserStories = () => {
     <div>
       {/* user-stories section */}
       <div className="user-stories mx-auto user flex content-center xl:gap-0 xxl:gap-2 sm:pt-5 lg:pt-10 xl:pt-16 xxl:pt-28 sm:pb-10 lg:pb-20 xl:pb-24 xxl:pb-36 xl:mb-8 xxl:mb-16 sm:px-6 lg:px-8 xl:px-14 xxl:px-48 ">
-        <div className="user-text xl:pr-8 align-middle">
-          <h1 className="user-title sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl xxl:text-8xl capitalize mb-2 ">
-            Utilize usecases <span className="block">that grow your</span>{' '}
-            business.
-          </h1>
-          <p className="user-text font-normal sm:text-sm lg:text-base xl:text-xl xxl:text-2xl text-justify py-6 pr-4 sm:w-100 lg:w-10/12">
-            OpenDaylight was designed to be a broad, general-purpose platform to
-            support a wide range of use cases–including ones that haven’t been
-            invented yet. ODL delivers the benefits of SDN and NFV to carriers,
-            enterprises, research institutions and businesses.
-          </p>
-        </div>
-        <div className="odl-image">
-          <img className="odl-logo" src={odl_usecase} alt="ODL Dark Logo" />
+        <div className="user-text container mx-auto grid md:grid-cols-2 lg:px-4">
+          <div className="user-text align-middle">
+            <h1 className="user-title sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl capitalize mb-2 ">
+              Utilize usecases <span className="block">that grow your</span>{' '}
+              business.
+            </h1>
+            <p className="user-text font-normal sm:text-sm lg:text-base xl:text-xl xxl:text-2xl text-justify py-6 pr-4 sm:w-100 lg:w-11/12">
+              OpenDaylight was designed to be a broad, general-purpose platform
+              to support a wide range of use cases–including ones that haven’t
+              been invented yet. ODL delivers the benefits of SDN and NFV to
+              carriers, enterprises, research institutions and businesses.
+            </p>
+          </div>
+          <div className="odl-image flex lg:justify-end xl:justify-center  items-center">
+            <img className="odl-logo" src={odl_usecase} alt="ODL Dark Logo" />
+          </div>
         </div>
       </div>
       {/* success section hidden for smaller screen */}
-      <div className="sm:hidden lg:block success section lg:pt-12 xl:pt-16 xxl:my-16 ">
-        <div className="success-background xxl:py-32 flex justify-end ">
+      <div className="sm:hidden lg:block success section lg:pt-12 xl:pt-16 lg:my-16 xl:my-28">
+        <div className="success-background xxl:py-32 flex justify-end relative">
           <div className="align-middle blue-box relative"></div>
-        </div>
-        <div className="success-box absolute align-middle py-28 px-14 ">
-          <p className="success-text lg:text-3xl xl:text-5xl font-medium">
-            How we can help you succeed!
-          </p>
-        </div>
-        <div className="success-cards ">
-          <div className="asd-card px-3 py-1 rounded-3xl border shadow-xl lg:w-64 xl:w-80 xxl:w-1/5 absolute">
-            <div className="flex flex-col items-center rounded-3xl text-center justify-center lg:p-6 xl:p-10">
-              <img className="mb-5 card-image" src={asd_icon} alt="" />
-              <h3 className="mb-5 lg:text-lg xl:text-xl xxl:text-2xl">
-                Automated Service Delivery
-              </h3>
-              <p className="mb-5 lg:text-sm xxl:text-base">
-                Open source SDN and automation to accelerate service delivery.
-              </p>
-              <a className="read-more" href="http://">
-                Read More
-              </a>
-            </div>
+          <div className="success-box absolute align-middle py-28 px-14 ">
+            <p className="success-text lg:text-3xl xl:text-3xl xxl:text-5xl font-medium">
+              How we can help you succeed!
+            </p>
           </div>
-          <div className="nro-card px-2 rounded-3xl border shadow-xl lg:w-64 xl:w-80 xxl:w-1/5 absolute">
-            <div className="flex flex-col items-center rounded-3xl text-center justify-center lg:p-6 xl:p-10">
-              <img className="mb-5 card-image" src={nro_icon} alt="" />
-              <h3 className="mb-5 lg:text-lg xl:text-xl xxl:text-2xl">
-                Network Resources Optimization (NRO){' '}
-              </h3>
-              <p className="mb-5 lg:text-sm xxl:text-base">
-                Dynamically optimizing the network based on load and state.
-              </p>
-              <a className="read-more" href="http://">
-                Read More
-              </a>
+          <div className="success-cards ">
+            <div className="asd-card px-3 py-1 rounded-3xl border shadow-xl lg:w-1/4 xl:w-80 xxl:w-1/5 absolute">
+              <div className="flex flex-col items-center rounded-3xl text-center justify-center lg:p-6 xxl:p-10">
+                <img className="mb-5 card-image" src={asd_icon} alt="" />
+                <h3 className="mb-5 lg:text-lg xl:text-xl xxl:text-2xl">
+                  Automated Service Delivery
+                </h3>
+                <p className="mb-5 lg:text-sm xxl:text-base">
+                  Open source SDN and automation to accelerate service delivery.
+                </p>
+                <a className="read-more" href="http://">
+                  Read More
+                </a>
+              </div>
             </div>
-          </div>
-          <div className="nfv-card px-2 rounded-3xl border shadow-xl lg:w-64 xl:w-80 xxl:w-1/5 absolute">
-            <div className="flex flex-col items-center rounded-3xl text-center justify-center lg:p-6 xl:p-10">
-              <img className="mb-5 card-image" src={nfv_icon} alt="" />
-              <h3 className="mb-5 lg:text-lg xl:text-xl xxl:text-2xl">
-                Cloud and NFV
-              </h3>
-              <p className="mb-5 lg:text-sm xxl:text-base">
-                Providing on-demand services that may be controlled by the end
-                user or service provider environment.
-              </p>
-              <a className="read-more" href="http://">
-                Read More
-              </a>
+            <div className="nro-card px-2 rounded-3xl border shadow-xl lg:w-1/4 xl:w-80 xxl:w-1/5 absolute">
+              <div className="flex flex-col items-center rounded-3xl text-center justify-center lg:p-6 xxl:p-10">
+                <img className="mb-5 card-image" src={nro_icon} alt="" />
+                <h3 className="mb-5 lg:text-lg xl:text-xl xxl:text-2xl">
+                  Network Resources Optimization (NRO){' '}
+                </h3>
+                <p className="mb-5 lg:text-sm xxl:text-base">
+                  Dynamically optimizing the network based on load and state.
+                </p>
+                <a className="read-more" href="http://">
+                  Read More
+                </a>
+              </div>
             </div>
-          </div>
-          <div className="visibility-card px-2 rounded-3xl border shadow-xl lg:w-64 xl:w-80 xxl:w-1/5 absolute">
-            <div className="flex flex-col items-center rounded-3xl text-center justify-center lg:p-6 xl:p-10">
-              <img className="mb-5 card-image" src={visibility_icon} alt="" />
-              <h3 className="mb-5  lg:text-lg xl:text-xl xxl:text-2xl">
-                Visibility and Control
-              </h3>
-              <p className="mb-5 lg:text-sm xxl:text-base">
-                Centralized administration of the network and multiple
-                controllers. This is sometimes used as a precursor to NRO.
-              </p>
-              <a className="read-more" href="http://">
-                Read More
-              </a>
+            <div className="nfv-card px-2 rounded-3xl border shadow-xl lg:w-1/4 xl:w-80 xxl:w-1/5 absolute">
+              <div className="flex flex-col items-center rounded-3xl text-center justify-center lg:p-6 xxl:p-10">
+                <img className="mb-5 card-image" src={nfv_icon} alt="" />
+                <h3 className="mb-5 lg:text-lg xl:text-xl xxl:text-2xl">
+                  Cloud and NFV
+                </h3>
+                <p className="mb-5 lg:text-sm xxl:text-base">
+                  Providing on-demand services that may be controlled by the end
+                  user or service provider environment.
+                </p>
+                <a className="read-more" href="http://">
+                  Read More
+                </a>
+              </div>
+            </div>
+            <div className="visibility-card px-2 rounded-3xl border shadow-xl lg:w-1/4 xl:w-80 xxl:w-1/5 absolute">
+              <div className="flex flex-col items-center rounded-3xl text-center justify-center lg:p-6 xxl:p-10">
+                <img className="mb-5 card-image" src={visibility_icon} alt="" />
+                <h3 className="mb-5  lg:text-lg xl:text-xl xxl:text-2xl">
+                  Visibility and Control
+                </h3>
+                <p className="mb-5 lg:text-sm xxl:text-base">
+                  Centralized administration of the network and multiple
+                  controllers. This is sometimes used as a precursor to NRO.
+                </p>
+                <a className="read-more" href="http://">
+                  Read More
+                </a>
+              </div>
             </div>
           </div>
         </div>

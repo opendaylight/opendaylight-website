@@ -40,9 +40,21 @@ const Footer = ({ theme }) => {
               <span>
                 <p className="heading"> Resources</p>
               </span>
-              <li>About</li>
-              <li>Solutions</li>
-              <li>Documentations</li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+              <li>
+                <Link to="/about">Solutions</Link>
+              </li>
+              <li>
+                <a
+                  href="https://docs.opendaylight.org/en/stable-chlorine/getting-started-guide/index.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Documentations
+                </a>
+              </li>
             </ul>
           </div>
           <div className="links">
@@ -50,8 +62,25 @@ const Footer = ({ theme }) => {
               <span>
                 <p className="heading">Links</p>
               </span>
-              <li>Gerrit</li>
-              <li>LinkedIn</li>
+              <li>
+                <a
+                  href="https://git.opendaylight.org/gerrit/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Gerrit
+                </a>
+              </li>
+              <li>
+                {' '}
+                <a
+                  href="https://www.linkedin.com/company/lfnetworking/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn
+                </a>
+              </li>
             </ul>
           </div>
         </div>

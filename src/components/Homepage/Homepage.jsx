@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './Homepage.css'
 import map_light from '../../images/map_light.png'
 import map_dark from '../../images/map_dark.png'
@@ -26,23 +27,20 @@ const Homepage = ({ theme }) => {
   return (
     <div className="">
       {/* home-section */}
-      <div className=" home md:flex content-center gap-14 sm:py-12 xl:pt-16 md:pb-20 xl:pb-36 xxl:pb-36 lg:mb-4 xl:mb-40 xxl:mb-44 sm:px-8 lg:px-10 xl:px-14 xxl:px-48 relative">
-        <div className="container mx-auto home grid md:grid-cols-2">
-          <div className="home-text lg:pt-2 xl:pt-8 align-middle">
+      <div className=" home md:flex content-center sm:py-12 xl:pt-16 md:pb-20 xl:pb-36 lg:mb-4 sm:px-8 lg:px-16 xl:px-14 xxl:px-16 relative">
+        <div className="container mx-auto home gap-4 grid md:grid-cols-2 lg:pb-4 xl:pb-0">
+          <div className="home-text lg:pt-2 xl:pt-8  justify-center">
             <h1 className="home-title sm:text-3xl lg:text-4xl xl:text-6xl xxl:text-7xl uppercase">
               Automating <span>networks of any</span> size & scale.
             </h1>
-            <p className="home-text font-normal sm:text-base md:text-sm lg:text-base xl:text-xl xxl:text-3xl text-justify py-6 lg:pr-4">
+            <p className="home-text font-normal sm:text-base md:text-sm lg:text-base xl:text-xl xxl:text-2xl text-justify py-6 lg:pr-4">
               The OpenDaylight project is an open source platform for Software
               Defined Networking (SDN) that uses open protocols to provide
               centralized, programmatic control and network device monitoring.
             </p>
-            <button
-              className="learn-button rounded-full"
-              href="https://www.opendaylight.org/"
-            >
-              Learn More
-            </button>
+            <Link to="/about">
+              <button className="learn-button rounded-full">Learn More</button>
+            </Link>
           </div>
           <div className="hidden md:block img-box mx-auto">
             {theme === 'dark-theme' ? (
@@ -52,30 +50,29 @@ const Homepage = ({ theme }) => {
             )}
           </div>
         </div>
-      </div>
-      <hr className="md:hidden" />
-      <div className="container mx-auto sm:px-8 md:px-0">
         {/* stats-box */}
-        <div className="container mx-auto stats justify-between flex md:py-8 xl:py-16 px-5 rounded-xl absolute sm:hidden md:flex">
+        <div className="container mx-auto stats justify-between flex md:py-8 xl:py-16 px-5 rounded-xl sm:hidden md:flex absolute">
           <div className="stats-box ">
             <img className="stats-icon" src={release} alt="" srcset="" />
-            <h3 className="stats-text xl:text-xl xxl:text-2xl">
+            <h3 className="stats-text sm:text-sm lg:text-base xl:text-xl xxl:text-2xl">
               Release: 18 Argon
             </h3>
           </div>
           <div className="stats-box">
             <img className="stats-icon" src={commits} alt="" srcset="" />
-            <h3 className="stats-text lg:text-base xl:text-xl xxl:text-2xl">
+            <h3 className="stats-text sm:text-sm lg:text-base xl:text-xl xxl:text-2xl">
               Total Commits: 2.6K+
             </h3>
           </div>
           <div className="stats-box">
             <img className="stats-icon" src={committers} alt="" srcset="" />
-            <h3 className="stats-text lg:text-base xl:text-xl xxl:text-2xl">
+            <h3 className="stats-text sm:text-sm lg:text-base xl:text-xl xxl:text-2xl">
               Committers: 45
             </h3>
           </div>
         </div>
+      </div>
+      <div className="container mx-auto sm:px-8 md:px-0">
         {/* why opendaylight/functionality section */}
         <div className="function text-justify xl:my-4 xxl:my-12">
           <h3 className="function-text ">
