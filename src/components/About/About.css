@@ -1,0 +1,192 @@
+.light-theme .unleash,
+.light-theme .unleash-banner,
+.light-theme .unleash-body {
+  background-color: #fbf8e9;
+}
+
+.dark-theme .unleash,
+.dark-theme .unleash-banner,
+.dark-theme .unleash-body {
+  background-color: #79858d;
+  color: #f1f1f1;
+}
+
+.dark-theme .about-title,
+.dark-theme .sdn-title,
+.dark-theme .training-title,
+.dark-theme .link {
+  color: #f48120;
+  text-decoration: none;
+}
+
+.dark-theme .lfn-link {
+  color: #f1f1f1;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.light-theme .lfn-link,
+.light-theme .link {
+  color: #2539ed;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.dark-theme .training span {
+  color: #c3c3c3;
+}
+
+.unleash-banner {
+  font-weight: bolder;
+}
+
+.about-icon {
+  width: 400px;
+  height: 500px;
+}
+
+.sdn-icon {
+  width: 600px;
+  height: 600px;
+}
+
+.sdn-image {
+  display: flex;
+  align-items: center;
+}
+
+.training-image {
+  display: flex;
+  align-items: flex-end;
+}
+
+.training-icon {
+  width: 700px;
+  height: 250px;
+}
+
+/*Desktop view*/
+@media screen and (min-width: 1280px) and (max-width: 1536px) {
+  .about-icon {
+    width: 380px;
+    height: 480px;
+  }
+
+  .sdn-icon {
+    width: 550px;
+    height: 550px;
+  }
+
+  .training-icon {
+    width: 600px;
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1279px) {
+  .about-image,
+  .sdn-image,
+  .training-image {
+    display: flex;
+    align-items: center;
+  }
+
+  .about-icon {
+    width: 350px;
+    height: 450px;
+  }
+  .sdn-icon {
+    width: 400px;
+    height: 400px;
+  }
+
+  .training-icon {
+    width: 400px;
+    height: 200px;
+  }
+}
+/*Tablet view*/
+@media screen and (max-width: 1024px) {
+  .about-image,
+  .sdn-image,
+  .training-image {
+    display: flex;
+    align-items: center;
+  }
+
+  .about-icon {
+    width: 300px;
+    height: 400px;
+  }
+
+  .sdn-icon {
+    width: 400px;
+    height: 400px;
+  }
+
+  .training-icon {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .about-image,
+  .sdn-image,
+  .training-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about-icon {
+    width: 280px;
+    height: 400px;
+  }
+
+  .sdn-icon {
+    width: 320px;
+    height: 400px;
+  }
+
+  .training-icon {
+    width: 380px;
+    height: 160px;
+  }
+}
+
+/*Mpbile View*/
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .about,
+  .training {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .about-icon {
+    width: 250px;
+    height: 320px;
+    margin: 40px 0;
+  }
+
+  .sdn-image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sdn-icon {
+    width: 280px;
+    height: 280px;
+  }
+
+  .training-image {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .training-icon {
+    width: 300px;
+    height: 150px;
+    margin: 40px 0;
+  }
+}
