@@ -77,7 +77,7 @@ const Homepage = ({ theme }) => {
         <div className="function text-justify xl:my-4 xxl:my-12">
           <h3 className="function-text ">
             <center className="sm:my-10 md:mt-24 xl:my-28 sm:text-3xl xl:text-4xl">
-              Why Opendaylight?
+              Why OpenDaylight?
             </center>
           </h3>
           <div className="grid sm:grid-rows-1 md:grid-rows-2 sm:py-10 xl:py-0 lg:px-10">
