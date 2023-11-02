@@ -37,7 +37,7 @@
 }
 
 .user-stories {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 95%);
 }
 
 .blue-box {
@@ -52,7 +52,7 @@
   border-radius: 100px 0px 0px 0px;
   background: #fff5db;
   backdrop-filter: blur(2px);
-  width: 22%;
+  width: 22%; /*both boxes are sticking because of this.*/
   height: 358px;
   flex-shrink: 0;
   left: 150px; /*both boxes are sticking because of this.*/
@@ -105,54 +105,18 @@
 }
 
 @media screen and (min-width: 2000px) {
-  .blue-box {
-    width: 75%;
-    height: 800px;
-    position: relative;
+  .odl-logo {
+    width: 500px;
   }
 
-  .success-box {
-    left: 500px;
-    width: 25%;
-    height: 450px;
-    align-items: center;
-    display: flex;
-  }
-  .success-text {
-    font-size: 65px !important;
-  }
-
-  .asd-card,
-  .nro-card,
-  .nfv-card,
-  .visibility-card {
-    padding: 4rem 1rem;
-  }
-
-  .asd-card {
-    left: 45%;
-  }
-
-  .nro-card {
-    left: 45%;
-  }
-
-  .nfv-card {
-    left: 70%;
-  }
-
-  .visibility-card {
-    left: 70%;
+  .persons-image {
+    width: 200px;
   }
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1536px) {
   .odl-logo {
     width: 400px;
-  }
-
-  .user-stories {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 93%);
   }
 
   .blue-box {
@@ -204,10 +168,9 @@
   }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1279px) {
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
   .odl-logo {
     width: 400px;
-    height: 400px;
   }
   .success-box {
     height: 240px;
@@ -240,65 +203,9 @@
   }
 }
 
-/*tablet*/
-@media screen and (max-width: 1024px) {
-  .success {
-    height: 750px;
-  }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .odl-logo {
-    width: 1300px;
-  }
-
-  .user-stories {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 90%);
-  }
-
-  .success-box {
-    border-radius: 100px 0px 0px 0px;
-    background: #fff5db;
-    backdrop-filter: blur(2px);
-    width: 316px;
-    height: 300px;
-    flex-shrink: 0;
-    position: relative;
-    left: 100px;
-  }
-
-  .blue-box {
-    background-color: #f5f9ff;
-    border-radius: 150px 0px 0px 0px;
-    width: 700px;
-    height: 550px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .asd-card {
-    left: 45%;
-  }
-
-  .nro-card {
-    left: 45%;
-  }
-
-  .nfv-card {
-    left: 72%;
-  }
-
-  .visibility-card {
-    left: 72%;
-  }
-
-  .card-image {
-    width: 70px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 840px) {
-  .odl-logo {
-    width: 1200px;
-    margin-bottom: 15px;
+    width: 350px;
   }
 
   .user-stories {

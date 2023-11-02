@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div className="App">
-      <Router basename="/opendaylight">
+      <Router basename="/v1">
         <Navbar theme={theme} toggleTheme={toggleTheme} rotation={rotation} />
         <Routes>
           <Route path="/" element={<Homepage theme={theme} />} />

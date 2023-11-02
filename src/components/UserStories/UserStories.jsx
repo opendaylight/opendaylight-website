@@ -6,6 +6,7 @@ import asd_icon from '../../images/asd_icon.png'
 import nro_icon from '../../images/nro_icon.png'
 import nfv_icon from '../../images/nfv_icon.png'
 import visibility_icon from '../../images/visibility_icon.png'
+import platform_overview from '../../components/PlatformOverview/PlatformOverview'
 
 const success = [
   {
@@ -33,7 +34,7 @@ const success = [
     title: 'Visibility and Control',
     description:
       'Centralized administration of the network and multiple controllers. This is sometimes used as a precursor to NRO.',
-    link: 'https://www.google.com/',
+    link: platform_overview,
   },
 ]
 
@@ -42,26 +43,26 @@ const UserStories = () => {
     <div>
       {/* user-stories section */}
       <div className="user-stories mx-auto user flex content-center xl:gap-0 xxl:gap-2 sm:pt-5 lg:pt-10 xl:pt-16 xxl:pt-28 sm:pb-10 lg:pb-20 xl:pb-24 xxl:pb-36 xl:mb-8 xxl:mb-16 sm:px-6 lg:px-8 xl:px-14 xxl:px-48 ">
-        <div className="user-text container mx-auto grid md:grid-cols-2 lg:px-4">
-          <div className="user-text align-middle">
-            <h1 className="user-title sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl capitalize mb-2 ">
+        <div className="user-text container mx-auto grid md:grid-cols-3 lg:px-4">
+          <div className="user-text align-middle col-span-2">
+            <h1 className="user-title sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl xxxl:text-8xl capitalize mb-2">
               Utilize usecases <span className="block">that grow your</span>{' '}
               business.
             </h1>
-            <p className="user-text font-normal sm:text-sm lg:text-base xl:text-xl xxl:text-2xl text-justify py-6 pr-4 sm:w-100 lg:w-11/12">
+            <p className="user-text font-normal sm:text-sm lg:text-base xl:text-xl xxl:text-2xl xxxl:text-3xl text-justify py-6 pr-4 sm:w-100 md:w-11/12">
               OpenDaylight was designed to be a broad, general-purpose platform
               to support a wide range of use cases–including ones that haven’t
               been invented yet. ODL delivers the benefits of SDN and NFV to
               carriers, enterprises, research institutions and businesses.
             </p>
           </div>
-          <div className="odl-image flex lg:justify-end xl:justify-center  items-center">
+          <div className="odl-image flex md:justify-end xl:justify-center xxl:justify-end xxxl:justify-center items-center col-span-1">
             <img className="odl-logo" src={odl_usecase} alt="ODL Dark Logo" />
           </div>
         </div>
       </div>
       {/* success section hidden for smaller screen */}
-      <div className="sm:hidden lg:block success section lg:pt-12 xl:pt-16 lg:my-16 xl:my-28">
+      <div className="sm:hidden lg:block xxxl:hidden success section lg:pt-12 xl:pt-16 lg:my-16 xl:my-28">
         <div className="success-background xxl:py-32 flex justify-end relative">
           <div className="align-middle blue-box relative"></div>
           <div className="success-box absolute align-middle py-28 px-14 ">
@@ -132,27 +133,31 @@ const UserStories = () => {
         </div>
       </div>
       {/* success section shown only for smaller screen */}
-      <div className="sm:block lg:hidden mx-auto small-success my-10 px-6 text-center">
+      <div className="container mx-auto sm:block lg:hidden xxxl:block small-success my-10 px-6 text-center">
         <h3 className="mb-9">How we can help you succeed!</h3>
-        <div className="grid sm:grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 align-middle">
+        <div className="grid sm:grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2 align-middle">
           {/* Using map so that new card automatically get's created when new person is added. */}
           {success.map((value, index) => (
-            <div className="cards-box py-4 px-6 rounded-lg shadow-xl flex-col">
+            <div className="cards-box sm:py-2 sm:px-4 md:py-4 md:px-6 rounded-lg shadow-xl flex-col">
               <div className="cards persons-images my-auto flex justify-center">
                 <img
                   src={value.image}
                   alt={`Person ${index}`}
-                  className="sm:w-20 rounded-full mt-6"
+                  className="sm:w-20 xxxl:w-28 rounded-full mt-6"
                 />
               </div>
               <div className="cards my-4">
-                <h3 className="md:text-base lg:text-2xl mb-3">{value.title}</h3>
-                <p className="text-center text-sm mb-5">{value.description}</p>
+                <h3 className="sm:text-lg md:text-base lg:text-2xl xxxl:text-4xl mb-3">
+                  {value.title}
+                </h3>
+                <p className="text-center text-sm xxxl:text-xl mb-5">
+                  {value.description}
+                </p>
                 <a
                   href={value.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="read-more"
+                  className="read-more xxxl:text-2xl"
                 >
                   Read More
                 </a>
@@ -179,10 +184,10 @@ const UserStories = () => {
               alt=""
             />
             <p className="sm:mb-5 lg:mb-5 xxl:mb-9 w-11/12 sm:text-sm xl:text-sm xxl:text-lg">
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book. It has survived not
-              only five centuries.
+              OpenDaylight is Verizon’s foundational and directional SDN
+              controller with 2 use cases in production across the network. It
+              provides us with the ability to innovate at our own pace and helps
+              drive down both CapEx and OpEx.
             </p>
             <h4 className="testimonial-company sm:text-sm lg:text-xl xxl:text-2xl">
               - Verizon
