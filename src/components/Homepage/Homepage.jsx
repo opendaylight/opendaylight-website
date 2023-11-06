@@ -27,7 +27,7 @@ const Homepage = ({ theme }) => {
   return (
     <div className="">
       {/* home-section */}
-      <div className=" home md:flex content-center sm:py-12 xl:pt-16 md:pb-20 xl:pb-36 lg:mb-4 sm:px-8 lg:px-16 xl:px-14 xxl:px-16 relative">
+      <div className=" home md:flex content-center sm:py-12 xl:pt-16 md:pb-20 xl:pb-36 lg:mb-4 sm:px-8 md:px-14 lg:px-12 xl:px-14 xxl:px-16 relative">
         <div className="container mx-auto home gap-4 grid md:grid-cols-2 lg:pb-4 xl:pb-0">
           <div className="home-text lg:pt-2 xl:pt-8  justify-center">
             <h1 className="home-title sm:text-3xl lg:text-4xl xl:text-6xl xxl:text-7xl uppercase">
