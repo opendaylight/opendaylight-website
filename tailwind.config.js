@@ -18,6 +18,9 @@ module.exports = {
 
       xxl: '1536px',
       // => desktop view
+
+      xxxl: '2000px',
+      // => Extra Large view
     },
   },
   plugins: [require('daisyui')],

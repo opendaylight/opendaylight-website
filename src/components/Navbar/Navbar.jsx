@@ -1,20 +1,39 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Navbar.css'
 import odl_dark_logo from '../../images/odl_dark_logo.png'
 import odl_light_logo from '../../images/odl_light_logo.png'
 import { Link } from 'react-router-dom'
 
 const Navbar = ({ theme, toggleTheme, rotation }) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
   useEffect(() => {
     document.body.className = theme
   }, [theme])
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen)
+  }
+
+  const closeMenu = () => {
+    setIsMenuOpen(false)
+  }
+
+  // const handleDetailsClick = (e) => {
+  //   e.preventDefault()
+  // }
+
   const textColor = theme === 'dark' ? 'text-white' : 'text-black'
 
   return (
-    <div className=" container mx-auto navbar bg-base-100 justify-between py-5 sm:px-4 md:px-0 lg:px-4">
+    <div className=" container mx-auto navbar bg-base-100 justify-between py-5 sm:px-4 md:px-2 lg:px-2 xl:px-0">
       <div className="navbar-start">
         <div className="dropdown">
-          <label tabIndex={0} className="btn btn-ghost xl:hidden">
+          <label
+            tabIndex={0}
+            className="btn btn-ghost xl:hidden pl-0"
+            onClick={toggleMenu}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -30,66 +49,90 @@ const Navbar = ({ theme, toggleTheme, rotation }) => {
               />
             </svg>
           </label>
-          <div>
-            <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-72"
-            >
-              <li>
-                <Link to="/about" className={textColor}>
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link to="/governance" className={textColor}>
-                  Governance
-                </Link>
-              </li>
-              <li>
-                <Link to="/user-stories" className={textColor}>
-                  User Stories
-                </Link>
-              </li>
-              <li tabIndex={0}>
-                <details className="">
-                  <summary className={textColor}>Solutions</summary>
-                  <ul className="p-2 w-64">
-                    <li>
-                      <Link to="/platform-overview" className={textColor}>
-                        Platform Overview
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/cloud-nvf" className={textColor}>
-                        Cloud and NFV
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/automated-service-delivery"
-                        className={textColor}
-                      >
-                        Automated Delivery System
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/network-resource-optimization"
-                        className={textColor}
-                      >
-                        Network Resource Optimization
-                      </Link>
-                    </li>
-                  </ul>
-                </details>
-              </li>
-              <li>
-                <Link to="/get-started" className={textColor}>
-                  Get Started
-                </Link>
-              </li>
-            </ul>
-          </div>
+          {isMenuOpen && (
+            <div>
+              <ul
+                tabIndex={0}
+                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-72"
+              >
+                <li>
+                  <Link to="/about" className={textColor} onClick={closeMenu}>
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/governance"
+                    className={textColor}
+                    onClick={closeMenu}
+                  >
+                    Governance
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/user-stories"
+                    className={textColor}
+                    onClick={closeMenu}
+                  >
+                    User Stories
+                  </Link>
+                </li>
+                <li tabIndex={0}>
+                  <details className="">
+                    <summary className={textColor}>Solutions</summary>
+                    <ul className="p-2 w-64">
+                      <li>
+                        <Link
+                          to="/platform-overview"
+                          className={textColor}
+                          onClick={closeMenu}
+                        >
+                          Platform Overview
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to="/cloud-nvf"
+                          className={textColor}
+                          onClick={closeMenu}
+                        >
+                          Cloud and NFV
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to="/automated-service-delivery"
+                          className={textColor}
+                          onClick={closeMenu}
+                        >
+                          Automated Delivery System
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to="/network-resource-optimization"
+                          className={textColor}
+                          onClick={closeMenu}
+                        >
+                          Network Resource Optimization
+                        </Link>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+                <li>
+                  <Link
+                    to="/get-started"
+                    className={textColor}
+                    onClick={closeMenu}
+                  >
+                    Get Started
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          )}
         </div>
         <div>
           <Link to="/">
@@ -164,7 +207,7 @@ const Navbar = ({ theme, toggleTheme, rotation }) => {
         </ul>
       </div>
       <div className="navbar-center ">
-        <button className="md:mr-4 xl:mr-0">
+        <button className="">
           <svg
             style={{
               width: 30,
