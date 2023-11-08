@@ -200,10 +200,10 @@ const UserStories = () => {
               alt=""
             />
             <p className="sm:mb-5 lg:mb-5 xxl:mb-9 w-11/12 sm:text-sm xl:text-sm xxl:text-lg">
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book. It has survived not
-              only five centuries.
+              OpenDaylight's adaptable architecture enables us to address
+              network challenges across RAN, edge, core, and SONiC-based
+              enterprise datacenters and campuses, providing us with a
+              comprehensive platform solution.
             </p>
             <h4 className="testimonial-company sm:text-sm lg:text-xl xxl:text-2xl">
               - PANTHEON.tech
