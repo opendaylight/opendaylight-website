@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/opendaylight-website/static/css/main.8ab3126e.css",
-    "main.js": "/opendaylight-website/static/js/main.8386f30e.js",
+    "main.css": "/opendaylight-website/static/css/main.07098aef.css",
+    "main.js": "/opendaylight-website/static/js/main.60ca2c9c.js",
+    "static/media/Casey.png": "/opendaylight-website/static/media/Casey.6b9c307531495fd2bbf1.png",
     "static/media/Robert.png": "/opendaylight-website/static/media/Robert.9b5abad6c9013904237f.png",
     "static/media/Manoj.png": "/opendaylight-website/static/media/Manoj.8457e5f3d656b8aeec7e.png",
+    "static/media/Jill.png": "/opendaylight-website/static/media/Jill.86189ce955be4675b43e.png",
     "static/media/Ivan.png": "/opendaylight-website/static/media/Ivan.aff6627889a6f1bd5a4f.png",
     "static/media/Gilles.png": "/opendaylight-website/static/media/Gilles.adcd896c5936faf9b94b.png",
     "static/media/map_light.png": "/opendaylight-website/static/media/map_light.a5987da1e9fe8dae8da3.png",
@@ -13,7 +15,6 @@
     "static/media/map_dark.png": "/opendaylight-website/static/media/map_dark.77a74edd15b9a53f24d9.png",
     "static/media/odl_usecase.png": "/opendaylight-website/static/media/odl_usecase.2358e26db985609bc401.png",
     "static/media/cm_usecase_1.png": "/opendaylight-website/static/media/cm_usecase_1.aa5c3acd3f917c612570.png",
-    "static/media/Casey.png": "/opendaylight-website/static/media/Casey.1096e91472abfeaf195d.png",
     "static/media/ericsson_sdn.png": "/opendaylight-website/static/media/ericsson_sdn.e4a82a1b277d61a9d7f3.png",
     "static/media/about_light.png": "/opendaylight-website/static/media/about_light.3fa699d5655a20d0401c.png",
     "static/media/about_dark.png": "/opendaylight-website/static/media/about_dark.d73ce54f4c0cf8249dce.png",
@@ -29,11 +30,11 @@
     "static/media/shape_3.png": "/opendaylight-website/static/media/shape_3.69a430cd77ba07ac86ee.png",
     "static/media/maze_dark.png": "/opendaylight-website/static/media/maze_dark.47c2536d2d51e8b14210.png",
     "index.html": "/opendaylight-website/index.html",
-    "main.8ab3126e.css.map": "/opendaylight-website/static/css/main.8ab3126e.css.map",
-    "main.8386f30e.js.map": "/opendaylight-website/static/js/main.8386f30e.js.map"
+    "main.07098aef.css.map": "/opendaylight-website/static/css/main.07098aef.css.map",
+    "main.60ca2c9c.js.map": "/opendaylight-website/static/js/main.60ca2c9c.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ab3126e.css",
-    "static/js/main.8386f30e.js"
+    "static/css/main.07098aef.css",
+    "static/js/main.60ca2c9c.js"
   ]
 }
