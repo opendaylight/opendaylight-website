@@ -1,7 +1,9 @@
 import React from 'react'
 import './GetStarted.css'
 import Casey from '../../images/Casey.png'
+import Jill from '../../images/Jill.png'
 import gmail from '../../images/gmail.png'
+import Venkat from '../../images/Venkatrangan.png'
 import linkedin_2 from '../../images/linkedin_2.png'
 
 const resources = [
@@ -61,7 +63,7 @@ const personality = [
     gmail: 'ccain@linuxfoundation.org',
   },
   {
-    image: Casey,
+    image: Jill,
     name: 'Jill Lovato',
     designation: 'Senior Marketing Director',
     description:
@@ -71,7 +73,7 @@ const personality = [
     gmail: 'jlovato@linuxfoundation.org',
   },
   {
-    image: Casey,
+    image: Venkat,
     name: 'Venkatrangan',
     designation: 'TSC Chair, OpenDaylight',
     description:
@@ -167,9 +169,13 @@ const GettingStarted = () => {
           {personality.map((personality, index) => (
             <div className="media-card border xl:w-11/12 xxl:w-10/12 rounded-xl p-4">
               <div className="personality-image flex justify-center mb-6">
-                <img className="rounded-xl" src={personality.image} alt="" />
+                <img
+                  className="rounded-xl w-fit md:h-72 lg:h-64 xl:h-80"
+                  src={personality.image}
+                  alt=""
+                />
               </div>
-              <div className="card-info sm:mb-4 xl:mb-4 xxl:mb-5">
+              <div className="card-info sm:mb-4 xl:mb-4 xxl:mb-5 flex flex-col justify-start">
                 <h4 className="mb-3 xl:text-lg xxl:text-xl">
                   {personality.name}
                 </h4>
