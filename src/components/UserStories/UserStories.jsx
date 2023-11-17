@@ -5,8 +5,8 @@ import quote_icon from '../../images/quote_icon.png'
 import asd_icon from '../../images/asd_icon.png'
 import nro_icon from '../../images/nro_icon.png'
 import nfv_icon from '../../images/nfv_icon.png'
-import visibility_icon from '../../images/visibility_icon.png'
-import platform_overview from '../../components/PlatformOverview/PlatformOverview'
+import platform_icon from '../../images/platform_icon.png'
+import { Link } from 'react-router-dom'
 
 const success = [
   {
@@ -14,27 +14,27 @@ const success = [
     title: 'Automated Service Delivery',
     description:
       'Open source SDN and automation to accelerate service delivery.',
-    link: 'https://www.google.com/',
+    link: '/automated-service-delivery',
   },
   {
     image: nro_icon,
     title: ' Network Resources Optimization',
     description: 'Dynamically optimizing the network based on load and state.',
-    link: 'https://www.google.com/',
+    link: '/network-resource-optimization',
   },
   {
     image: nfv_icon,
     title: 'Cloud and NFV',
     description:
       'Providing on-demand services that may be controlled by the end user or service provider environment.',
-    link: 'https://www.google.com/',
+    link: '/cloud-nvf',
   },
   {
-    image: visibility_icon,
-    title: 'Visibility and Control',
+    image: platform_icon,
+    title: 'Platform Overview',
     description:
       'Centralized administration of the network and multiple controllers. This is sometimes used as a precursor to NRO.',
-    link: platform_overview,
+    link: '/platform-overview',
   },
 ]
 
@@ -80,9 +80,14 @@ const UserStories = () => {
                 <p className="mb-5 lg:text-sm xxl:text-base">
                   Open source SDN and automation to accelerate service delivery.
                 </p>
-                <a className="read-more" href="http://">
+                <Link
+                  className="read-more"
+                  to="/automated-service-delivery"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Read More
-                </a>
+                </Link>
               </div>
             </div>
             <div className="nro-card px-2 rounded-3xl border shadow-xl lg:w-1/4 xl:w-80 xxl:w-1/5 absolute">
@@ -94,9 +99,14 @@ const UserStories = () => {
                 <p className="mb-5 lg:text-sm xxl:text-base">
                   Dynamically optimizing the network based on load and state.
                 </p>
-                <a className="read-more" href="http://">
+                <Link
+                  className="read-more"
+                  to="/network-resource-optimization"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Read More
-                </a>
+                </Link>
               </div>
             </div>
             <div className="nfv-card px-2 rounded-3xl border shadow-xl lg:w-1/4 xl:w-80 xxl:w-1/5 absolute">
@@ -109,24 +119,34 @@ const UserStories = () => {
                   Providing on-demand services that may be controlled by the end
                   user or service provider environment.
                 </p>
-                <a className="read-more" href="http://">
+                <Link
+                  className="read-more"
+                  to="/cloud-nvf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Read More
-                </a>
+                </Link>
               </div>
             </div>
             <div className="visibility-card px-2 rounded-3xl border shadow-xl lg:w-1/4 xl:w-80 xxl:w-1/5 absolute">
               <div className="flex flex-col items-center rounded-3xl text-center justify-center lg:p-6 xxl:p-10">
-                <img className="mb-5 card-image" src={visibility_icon} alt="" />
+                <img className="mb-5 card-image" src={platform_icon} alt="" />
                 <h3 className="mb-5  lg:text-lg xl:text-xl xxl:text-2xl">
-                  Visibility and Control
+                  Platform Overview
                 </h3>
                 <p className="mb-5 lg:text-sm xxl:text-base">
                   Centralized administration of the network and multiple
                   controllers. This is sometimes used as a precursor to NRO.
                 </p>
-                <a className="read-more" href="http://">
+                <Link
+                  className="read-more"
+                  to="/platform-overview"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Read More
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -153,14 +173,14 @@ const UserStories = () => {
                 <p className="text-center text-sm xxxl:text-xl mb-5">
                   {value.description}
                 </p>
-                <a
-                  href={value.link}
+                <Link
                   target="_blank"
                   rel="noopener noreferrer"
+                  to={value.link}
                   className="read-more xxxl:text-2xl"
                 >
                   Read More
-                </a>
+                </Link>
               </div>
             </div>
           ))}
@@ -202,7 +222,7 @@ const UserStories = () => {
             <p className="sm:mb-5 lg:mb-5 xxl:mb-9 w-11/12 sm:text-sm xl:text-sm xxl:text-lg">
               OpenDaylight's adaptable architecture enables us to address
               network challenges across RAN, edge, core, and SONiC-based
-              enterprise datacenters and campuses, providing us with a
+              enterprise datacenters & campuses, providing us with a
               comprehensive platform solution.
             </p>
             <h4 className="testimonial-company sm:text-sm lg:text-xl xxl:text-2xl">
