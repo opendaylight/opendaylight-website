@@ -19,7 +19,7 @@ const resources = [
     description:
       'Read the documentation to learn more about how OpenDaylight works.',
     name: 'Getting Started',
-    link: 'https://docs.opendaylight.org/en/stable-chlorine/getting-started-guide/index.html',
+    link: 'https://docs.opendaylight.org/en/latest/getting-started-guide/index.html',
   },
   {
     heading: 'Projects',
