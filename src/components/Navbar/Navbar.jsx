@@ -26,7 +26,7 @@ const Navbar = ({ theme, toggleTheme, rotation }) => {
   const textColor = theme === 'dark' ? 'text-white' : 'text-black'
 
   return (
-    <div className=" container mx-auto navbar bg-base-100 justify-between py-5 sm:px-4 md:px-2 lg:px-2 xl:px-0">
+    <div className=" container mx-auto navbar bg-base-100 justify-between py-5 sm:px-4 md:px-2 lg:px-1 xl:px-0">
       <div className="navbar-start">
         <div className="dropdown">
           <label

@@ -55,19 +55,19 @@ const Homepage = ({ theme }) => {
           <div className="stats-box ">
             <img className="stats-icon" src={release} alt="" srcset="" />
             <h3 className="stats-text sm:text-sm lg:text-base xl:text-xl xxl:text-2xl">
-              Release: 18 Argon
+              Release: 19 Potassium
             </h3>
           </div>
           <div className="stats-box">
             <img className="stats-icon" src={commits} alt="" srcset="" />
             <h3 className="stats-text sm:text-sm lg:text-base xl:text-xl xxl:text-2xl">
-              Total Commits: 2.6K+
+              Total Commits: 2,559
             </h3>
           </div>
           <div className="stats-box">
             <img className="stats-icon" src={committers} alt="" srcset="" />
             <h3 className="stats-text sm:text-sm lg:text-base xl:text-xl xxl:text-2xl">
-              Committers: 45
+              Committers: 25
             </h3>
           </div>
         </div>
