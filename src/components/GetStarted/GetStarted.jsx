@@ -107,7 +107,7 @@ const GettingStarted = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="download-button sm:mr-2 lg:mr-10 py-2.5 px-6 text-base"
-              href="https://docs.opendaylight.org/en/stable-chlorine/downloads.html"
+              href="https://docs.opendaylight.org/en/latest/downloads.html"
             >
               Download
             </a>
@@ -115,7 +115,7 @@ const GettingStarted = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="download-button py-2.5 px-12 text-base"
-              href="https://docs.opendaylight.org/en/stable-chlorine/getting-started-guide/index.html"
+              href="https://docs.opendaylight.org/en/latest/getting-started-guide/index.html"
             >
               Guide
             </a>
