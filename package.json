@@ -1,6 +1,6 @@
 {
   "name": "opendaylight",
-  "homepage": "https://opendaylight.github.io/",
+  "homepage": "https://opendaylight.github.io/homepage",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
