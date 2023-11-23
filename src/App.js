@@ -28,7 +28,7 @@ function App() {
       <Router>
         <Navbar theme={theme} toggleTheme={toggleTheme} rotation={rotation} />
         <Routes>
-          <Route path="/homepage" element={<Homepage theme={theme} />} />
+          <Route path="/" element={<Homepage theme={theme} />} />
           <Route path="/about" element={<About theme={theme} />} />
           <Route path="/governance" element={<Governance theme={theme} />} />
           <Route path="/user-stories" element={<UserStories theme={theme} />} />
