@@ -13,6 +13,12 @@
   background-color: #79858d;
   color: #f1f1f1;
 }
-.dark-theme .tsc-title {
+.dark-theme .tsc-title,
+.tsc-span {
   color: #f48120;
+}
+
+.light-theme .tsc-span {
+  color: #2539ed;
+  text-decoration: underline;
 }

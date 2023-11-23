@@ -24,13 +24,13 @@ const AutomatedService = ({ theme }) => {
                 <img
                   src={search_dark}
                   alt="Search Logo"
-                  style={{ width: 300 }}
+                  style={{ width: 250 }}
                 />
               ) : (
                 <img
                   src={search_light}
                   alt="Search Logo"
-                  style={{ width: 300 }}
+                  style={{ width: 250 }}
                 />
               )}
             </div>
@@ -67,9 +67,9 @@ const AutomatedService = ({ theme }) => {
           <div className="row sm:pt-10 md:pt-8 lg:pt-16 flex">
             <div className="column content-image pt-2">
               {theme === 'dark-theme' ? (
-                <img src={maze_dark} alt="Maze Logo" style={{ width: 300 }} />
+                <img src={maze_dark} alt="Maze Logo" style={{ width: 250 }} />
               ) : (
-                <img src={maze_light} alt="Maze Logo" style={{ width: 300 }} />
+                <img src={maze_light} alt="Maze Logo" style={{ width: 250 }} />
               )}
             </div>
             <div className="column sm:pl-0 md:pl-12">
@@ -91,9 +91,9 @@ const AutomatedService = ({ theme }) => {
           <div className="row sm:pt-10 md:pt-8 lg:pt-16 flex">
             <div className="column content-image pt-2">
               {theme === 'dark-theme' ? (
-                <img src={odl_dark} alt="odl Logo" style={{ width: 150 }} />
+                <img src={odl_dark} alt="odl Logo" style={{ width: 130 }} />
               ) : (
-                <img src={odl_light} alt="odl Logo" style={{ width: 150 }} />
+                <img src={odl_light} alt="odl Logo" style={{ width: 130 }} />
               )}
             </div>
             <div className="column sm:pl-0 md:pl-12">
@@ -147,13 +147,9 @@ const AutomatedService = ({ theme }) => {
           <div className="row sm:py-10 md:py-8 lg:py-16  flex">
             <div className="column content-image pt-2">
               {theme === 'dark-theme' ? (
-                <img src={quote_dark} alt="quote Logo" style={{ width: 100 }} />
+                <img src={quote_dark} alt="quote Logo" style={{ width: 90 }} />
               ) : (
-                <img
-                  src={quote_light}
-                  alt="quote Logo"
-                  style={{ width: 100 }}
-                />
+                <img src={quote_light} alt="quote Logo" style={{ width: 90 }} />
               )}
             </div>
             <div className="column sm:pl-0 md:pl-12">

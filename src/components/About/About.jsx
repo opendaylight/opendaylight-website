@@ -28,6 +28,8 @@ const About = ({ theme }) => {
             independence and project roadmaps.{' '}
             <a
               href="https://lfnetworking.org/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="unleash-body lfn-link"
             >
               Learn more about LFN.
