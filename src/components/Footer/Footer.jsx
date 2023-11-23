@@ -41,14 +41,22 @@ const Footer = ({ theme }) => {
                 <p className="heading"> Resources</p>
               </span>
               <li>
-                <Link to="/about">About</Link>
+                <Link to="/about" target="_blank" rel="noopener noreferrer">
+                  About
+                </Link>
               </li>
               <li>
-                <Link to="/about">Solutions</Link>
+                <Link
+                  to="/user-stories"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Solutions
+                </Link>
               </li>
               <li>
                 <a
-                  href="https://docs.opendaylight.org/en/stable-chlorine/getting-started-guide/index.html"
+                  href="https://docs.opendaylight.org/en/latest/index.html"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

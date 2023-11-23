@@ -59,6 +59,7 @@ const personality = [
     description:
       'Casey Cain works on community development and all aspects of release management.',
     company: 'The Linux Foundation',
+    companylink: 'https://www.linuxfoundation.org/',
     linkedin: 'https://www.linkedin.com/in/caseycain1/',
     gmail: 'ccain@linuxfoundation.org',
   },
@@ -69,6 +70,7 @@ const personality = [
     description:
       'Jill leads communications, public relations and analyst relations for the LF Networking and LF Edge.',
     company: 'The Linux Foundation',
+    companylink: 'https://www.linuxfoundation.org/',
     linkedin: 'https://www.linkedin.com/in/jilllovato/',
     gmail: 'jlovato@linuxfoundation.org',
   },
@@ -79,6 +81,7 @@ const personality = [
     description:
       'Venkatrangan Govindaragan is the offical TSC chair for the OpenDaylight Community for this year.',
     company: 'Nvidia',
+    companylink: 'https://www.nvidia.com/en-in/',
     linkedin:
       'https://www.linkedin.com/in/venkatrangan-govindarajan-sdn-test-automation/',
     gmail: 'gvrangan@gmail.com',
@@ -188,7 +191,14 @@ const GettingStarted = () => {
               </div>
               <div className="media-links flex justify-between">
                 <div>
-                  <p className="company-name">{personality.company}</p>
+                  <a
+                    href={personality.companylink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="company-name"
+                  >
+                    {personality.company}
+                  </a>
                 </div>
                 <div className="flex sm:space-x-5 xl:space-x-3 xxl:space-x-5">
                   <a

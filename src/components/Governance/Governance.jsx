@@ -62,6 +62,8 @@ const Governance = () => {
             OpenDaylight is a founding project of{' '}
             <a
               href="https://lfnetworking.org/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="governance-body font-bold underline underline-offset-4"
             >
               LF Networking (LFN)
@@ -111,10 +113,25 @@ const Governance = () => {
               OpenDaylight follows an open governance model to ensure
               transparent decision-making and community participation. To
               understand more about OpenDaylight's governance model, you can
-              refer to this White Paper and if you want to learn more about TSC
-              member selection, governance, and activities checkout out TSC
-              Charter. If you wish to attend any meeting, please visit Meeting
-              and notes.
+              refer to this{' '}
+              <a
+                href="https://www.opendaylight.org/wp-content/uploads/sites/14/2018/03/opendaylight_open_community_and_meritocracy_for_sdn_v3.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="tsc-span">White Paper</span>
+              </a>{' '}
+              and if you want to learn more about TSC member selection,
+              governance, and activities checkout out{' '}
+              <a
+                href="https://www.opendaylight.org/wp-content/uploads/sites/14/2018/01/ODL-Technical-Charter-LF-Projects-LLC-FINAL.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="tsc-span">TSC Charter</span>
+              </a>
+              . If you wish to attend any meeting, please visit Meeting and
+              notes.
             </p>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './PlatformOverview.css'
 import banner_dark from '../../images/ODL_Dark_Banner.png'
 import shape_1 from '../../images/shape_1.png'
@@ -29,13 +30,30 @@ const PlatformOverview = ({ theme }) => {
             subscribers. OpenDaylight code has been integrated or embedded in
             more than 35 vendor solutions and apps, and can be utilized within a
             range of services. It is also at the core of broader open source
-            frameworks, <span>including ONAP.</span>
+            frameworks,{' '}
+            <a
+              href="https://www.onap.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>including ONAP.</span>
+            </a>
           </p>
           <p className="sm:text-xs xl:text-base">
-            As part of <span>LF Networking</span>, ODL is driven by a global,
-            collaborative community of vendor and user organizations that
-            continuously adapts to support the industry’s broadest set of SDN
-            and NFV <span>use cases.</span>
+            As part of{' '}
+            <a
+              href="https://lfnetworking.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span> LF Networking</span>
+            </a>
+            , ODL is driven by a global, collaborative community of vendor and
+            user organizations that continuously adapts to support the
+            industry’s broadest set of SDN and NFV{' '}
+            <Link to="/network-resource-optimization">
+              <span>use cases.</span>
+            </Link>
           </p>
         </div>
         <div className="architecture ">
