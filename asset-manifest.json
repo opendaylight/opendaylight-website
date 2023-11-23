@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/opendaylight-website/static/css/main.81e719ff.css",
-    "main.js": "/opendaylight-website/static/js/main.bee9e2f6.js",
+    "main.js": "/opendaylight-website/static/js/main.9f60ccd0.js",
     "static/media/Casey.png": "/opendaylight-website/static/media/Casey.6b9c307531495fd2bbf1.png",
     "static/media/Robert.png": "/opendaylight-website/static/media/Robert.9b5abad6c9013904237f.png",
     "static/media/Manoj.png": "/opendaylight-website/static/media/Manoj.8457e5f3d656b8aeec7e.png",
@@ -31,10 +31,10 @@
     "static/media/maze_dark.png": "/opendaylight-website/static/media/maze_dark.47c2536d2d51e8b14210.png",
     "index.html": "/opendaylight-website/index.html",
     "main.81e719ff.css.map": "/opendaylight-website/static/css/main.81e719ff.css.map",
-    "main.bee9e2f6.js.map": "/opendaylight-website/static/js/main.bee9e2f6.js.map"
+    "main.9f60ccd0.js.map": "/opendaylight-website/static/js/main.9f60ccd0.js.map"
   },
   "entrypoints": [
     "static/css/main.81e719ff.css",
-    "static/js/main.bee9e2f6.js"
+    "static/js/main.9f60ccd0.js"
   ]
 }
