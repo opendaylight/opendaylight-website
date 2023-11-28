@@ -21,3 +21,12 @@
   color: white;
   background-color: #2f4858;
 }
+
+.light-theme .lf-back,
+.light-theme .lf-banner {
+  background-color: #212121;
+}
+
+.lf-banner {
+  width: 300px;
+}

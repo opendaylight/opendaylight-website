@@ -192,7 +192,7 @@ const Homepage = ({ theme }) => {
         <img className="community-image" src={yourkit} alt="" srcset="" />
       </div>
       {/*Email Form*/}
-      <div className="email-form py-16 lg:px-28 xl:px-52 xxl:px-80">
+      {/* <div className="email-form py-16 lg:px-28 xl:px-52 xxl:px-80">
         <div className="container mx-auto sm:px-8 lg:px-0">
           <h3 className="email-heading sm:text-xl lg:text-2xl text-center mb-8">
             Stay Connected with the LF Networking Newsletter
@@ -257,7 +257,7 @@ const Homepage = ({ theme }) => {
             </form>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
