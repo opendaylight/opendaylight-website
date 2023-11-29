@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import './Homepage.css'
 import map_light from '../../images/map_light.png'
@@ -15,21 +15,12 @@ import icon_5 from '../../images/Icon_5.png'
 import icon_6 from '../../images/Icon_6.png'
 
 const Homepage = ({ theme }) => {
-  const [isChecked, setIsChecked] = useState(false)
-
-  const handleCheckboxChange = () => {
-    setIsChecked(!isChecked)
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-  }
   return (
     <div className="">
       {/* home-section */}
-      <div className=" home md:flex content-center sm:py-12 xl:pt-16 md:pb-20 xl:pb-36 lg:mb-4 sm:px-8 md:px-14 lg:px-12 xl:px-14 xxl:px-16 relative">
+      <div className="home md:flex content-center sm:py-12 xl:pt-16 md:pb-20 xl:pb-36 lg:mb-4 sm:px-8 md:px-14 lg:px-12 xl:px-14 xxl:px-16 relative">
         <div className="container mx-auto home gap-4 grid md:grid-cols-2 lg:pb-4 xl:pb-0">
-          <div className="home-text lg:pt-2 xl:pt-8  justify-center">
+          <div className="home-text lg:pt-2 xl:pt-0 xxxl:pt-5  justify-center">
             <h1 className="home-title sm:text-3xl lg:text-4xl xl:text-6xl xxl:text-7xl uppercase">
               Automating <span>networks of any</span> size & scale.
             </h1>
@@ -191,73 +182,6 @@ const Homepage = ({ theme }) => {
         </h3>
         <img className="community-image" src={yourkit} alt="" srcset="" />
       </div>
-      {/*Email Form*/}
-      {/* <div className="email-form py-16 lg:px-28 xl:px-52 xxl:px-80">
-        <div className="container mx-auto sm:px-8 lg:px-0">
-          <h3 className="email-heading sm:text-xl lg:text-2xl text-center mb-8">
-            Stay Connected with the LF Networking Newsletter
-          </h3>
-          <div className="email-inputs">
-            <form onSubmit={handleSubmit}>
-              <div className="first-name mb-7">
-                <h5 className="mb-2">First Name*</h5>
-                <input
-                  className="input-box"
-                  type="text"
-                  placeholder="First Name"
-                  required
-                />
-              </div>
-              <div className="last-name mb-7">
-                <h5 className="mb-2">Last Name*</h5>
-                <input
-                  className="input-box"
-                  type="text"
-                  placeholder="Last Name"
-                  required
-                />
-              </div>
-              <div className="last-name mb-7">
-                <h5 className="mb-2">Company Email*</h5>
-                <input
-                  className="input-box"
-                  type="email"
-                  placeholder="Company Email"
-                  required
-                />
-              </div>
-              <div className="email-text ml-1 mb-7 ">
-                <div className="flex items-start">
-                  <input
-                    type="checkbox"
-                    className="form-checkbox h-5 w-5 mt-0.5 text-indigo-600"
-                    checked={isChecked}
-                    onChange={handleCheckboxChange}
-                  />
-                  <label className="ml-2 email-text sm:text-xs xl:text-base">
-                    In addition, I would like to receive marketing emails about
-                    news, events, and training from The Linux Foundation and its
-                    Projects. I understand that I can unsubscribe at any time.
-                    <p className="mt-2">
-                      By submitting this form, I acknowledge that my information
-                      is subject to The Linux Foundation's Privacy Policy.
-                    </p>
-                  </label>
-                </div>
-              </div>
-              <div className="email-buttons text-center">
-                <button
-                  className="learn-button rounded-full uppercase"
-                  type="submit" // Specify the button type as "submit" to trigger form submission
-                  href="https://www.opendaylight.org/"
-                >
-                  Subscribe
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div> */}
     </div>
   )
 }
