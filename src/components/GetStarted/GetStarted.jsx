@@ -207,7 +207,7 @@ const GettingStarted = () => {
                     rel="noopener noreferrer"
                   >
                     <img
-                      className="md:w-8 md:h-8 xl:w-8 xl:h-8 cursor-pointer"
+                      className="sm:w-7 sm:h-7 md:w-8 md:h-8 xl:w-8 xl:h-8 cursor-pointer"
                       src={Email}
                       alt=""
                     />
@@ -218,7 +218,7 @@ const GettingStarted = () => {
                     rel="noopener noreferrer"
                   >
                     <img
-                      className="md:w-8 md:h-8 xl:w-8 xl:h-8 cursor-pointer"
+                      className="sm:w-7 sm:h-7 md:w-8 md:h-8 xl:w-8 xl:h-8 cursor-pointer"
                       src={Linkedin}
                       alt=""
                     />
