@@ -59,19 +59,25 @@ const Navbar = ({ theme, toggleTheme, rotation }) => {
 
   return (
     <div>
-      <div className=" hidden lg:flex lf-back">
+      <div className=" hidden lg:flex lf-back text-decoration-line: underline">
         <div className="container mx-auto lf-back">
-          {' '}
-          <img
-            className="lf-banner py-4"
-            src={lfprojects_banner}
-            alt=""
-            srcset=""
-          />
+          <a
+            href="https://www.linuxfoundation.org/projects"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="lf-banner py-4"
+              src={lfprojects_banner}
+              alt=""
+              srcset=""
+            />
+          </a>
         </div>
       </div>
+      <hr />
       <div
-        className=" container mx-auto navbar bg-base-100 justify-between py-5 sm:px-4 md:px-2 lg:px-1 xl:px-0"
+        className="container mx-auto navbar bg-base-100 justify-between py-5 sm:px-4 md:px-2 lg:px-1 xl:px-0"
         ref={navbarRef}
       >
         <div className="navbar-start">

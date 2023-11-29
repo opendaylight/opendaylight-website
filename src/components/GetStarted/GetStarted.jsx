@@ -2,9 +2,9 @@ import React from 'react'
 import './GetStarted.css'
 import Casey from '../../images/Casey.png'
 import Jill from '../../images/Jill.png'
-import gmail from '../../images/gmail.png'
 import Venkat from '../../images/Venkatrangan.png'
-import linkedin_2 from '../../images/linkedin_2.png'
+import Linkedin from '../../images/Linkedin.png'
+import Email from '../../images/Email.png'
 
 const resources = [
   {
@@ -189,7 +189,7 @@ const GettingStarted = () => {
                   {personality.description}
                 </p>
               </div>
-              <div className="media-links flex justify-between">
+              <div className="media-links flex justify-between items-end">
                 <div>
                   <a
                     href={personality.companylink}
@@ -200,20 +200,28 @@ const GettingStarted = () => {
                     {personality.company}
                   </a>
                 </div>
-                <div className="flex sm:space-x-5 xl:space-x-3 xxl:space-x-5">
+                <div className="flex sm:space-x-2 xl:space-x-3 xxl:space-x-4 media-icons">
                   <a
                     href={`mailto:${personality.gmail}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img src={gmail} alt="" />
+                    <img
+                      className="md:w-8 md:h-8 xl:w-8 xl:h-8 cursor-pointer"
+                      src={Email}
+                      alt=""
+                    />
                   </a>
                   <a
                     href={personality.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img src={linkedin_2} alt="" />
+                    <img
+                      className="md:w-8 md:h-8 xl:w-8 xl:h-8 cursor-pointer"
+                      src={Linkedin}
+                      alt=""
+                    />
                   </a>
                 </div>
               </div>
