@@ -1,10 +1,20 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import odl_light_logo from '../../images/odl_light_logo.png'
 import odl_dark_logo from '../../images/odl_dark_logo.png'
 import './Footer.css'
 
+// copyright function to change year
 const Footer = ({ theme }) => {
+  const [year, setYear] = useState(new Date().getFullYear())
+
+  useEffect(() => {
+    const intervalID = setInterval(() => {
+      setYear(new Date().getFullYear())
+    }, 1000)
+
+    return () => clearInterval(intervalID)
+  }, [])
   return (
     <div>
       <hr />
@@ -96,8 +106,8 @@ const Footer = ({ theme }) => {
       <div className="copyright">
         <hr />
         <p className="sm:text-xs lg:text-base py-2">
-          Copyright © 2023 OpenDaylight Project © 2023 The Linux Foundation®.
-          All rights reserved.
+          Copyright © {year} OpenDaylight Project © {year} The Linux
+          Foundation®. All rights reserved.
         </p>
       </div>
     </div>
