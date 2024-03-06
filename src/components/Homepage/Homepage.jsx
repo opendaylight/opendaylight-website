@@ -80,7 +80,7 @@ const Homepage = ({ theme }) => {
                     alt=""
                     className="functionality-image md:mb-5"
                   />
-                  <h3>Flexibilty</h3>
+                  <h3>Flexibility</h3>
                 </div>
                 <p className="functionality-body sm:text-sm md:text-xs xl:text-sm xxl:text-base">
                   OpenDaylight offers a flexible and modular architecture,
