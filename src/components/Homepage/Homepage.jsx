@@ -46,7 +46,7 @@ const Homepage = ({ theme }) => {
           <div className="stats-box ">
             <img className="stats-icon" src={release} alt="" srcset="" />
             <h3 className="stats-text sm:text-sm lg:text-base xl:text-xl xxl:text-2xl">
-              Release: 19 Potassium
+              Release: 20 Calcium
             </h3>
           </div>
           <div className="stats-box">
